@@ -4,36 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chits Creations</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            color: #333;
-        }
-        header {
-            background: #000;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        .btn {
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        footer {
-            background: #f1f1f1;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -42,20 +13,37 @@
     <p>Unique Handmade Creations</p>
 </header>
 
-<section>
-    <h2>Welcome</h2>
-    <p>We create beautiful custom-made products just for you.</p>
-    <a href="#" class="btn">Contact Us</a>
-</section>
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<section>
-    <h2>Our Services</h2>
+<section id="home" class="hero">
+    <h2>Welcome to Chits Creations</h2>
+    <p>We create beautiful custom-made products just for you.</p>
     <p>Custom Gifts | Handmade Items | Creative Designs</p>
 </section>
 
+<section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-container" id="productsContainer">
+        <!-- Products will be loaded here by JavaScript -->
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>Interested in our products? Contact us for orders and custom requests!</p>
+    <a href="mailto:contact@chitscreations.com" class="btn">Contact Us</a>
+</section>
+
 <footer>
-    <p>© 2026 Chits Creations</p>
+    <p>© 2026 Chits Creations - All Rights Reserved</p>
 </footer>
 
+<script src="products.js"></script>
 </body>
 </html>
